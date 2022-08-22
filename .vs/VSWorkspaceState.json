@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\main",
+    "\\src\\main\\java",
+    "\\src\\main\\java\\com",
+    "\\src\\main\\java\\com\\example",
+    "\\src\\main\\java\\com\\example\\springwebservice",
+    "\\src\\main\\java\\com\\example\\springwebservice\\controller",
+    "\\src\\main\\java\\com\\example\\springwebservice\\model",
+    "\\src\\main\\java\\com\\example\\springwebservice\\service"
+  ],
+  "SelectedNode": "\\src\\main\\java\\com\\example\\springwebservice\\SpringWebServiceApplication.java",
+  "PreviewInSolutionExplorer": false
+}

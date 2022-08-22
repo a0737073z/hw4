@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<form id="form1" method="post" action="Server.aspx">
+    <div>
+        請輸入個人資料:<br />
+        <br />
+        id : <input type="text" name="id" id="id"
+                      required="required" /><br />
+        name : <input type="text" name="name" id="name"  /><br />
+        age : <input type="number" name="age" id="age"  /><br />
+    </div>
+    <input id="btnSubmit" type="submit" name="submit" value="Submit" />
+    <input id="btnReset" type="reset" name="submit" value="Reset" />
+</form>
+<script>
+       [
+    {
+        id: "3",
+        name: "A",
+        age: "12",
+    },
+    {
+        id: "4",
+        name: "B",
+        age: "12",
+    }
+    ]
+
+    addEventListener("click", function () {
+        var dataJson = JSON.stringify(myNewData);
+        var request2 = new XMLHttpRequest();
+        request2.open("POST", "http://localhost:8080/api/v1/user", true);
+        request2.setRequestHeader("Content-type", "application/json");
+        request2.send(dataJson);
+
+        request2.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                console.log(this.responseText);
+            }
+        };
+    });
+    </script>
+</body>
+
+</html>
