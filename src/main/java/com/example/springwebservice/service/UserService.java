@@ -32,6 +32,7 @@ public class UserService {
         User user = new User();
         user.setId(request.getId());
         user.setName(request.getName());
+        user.setAge(request.getAge());
         userRepository.save(user);
         return "OK";
     }

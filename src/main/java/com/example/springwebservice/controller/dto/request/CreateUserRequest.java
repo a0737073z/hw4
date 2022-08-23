@@ -12,6 +12,5 @@ import lombok.Setter;
 public class CreateUserRequest {
     private int id;
     private String name;
-    private int price;
-    private String description;
+    private int age;
 }
